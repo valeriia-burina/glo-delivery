@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -20,28 +22,74 @@ body{
 
 /* header */
 .header {
-    height: 125px;
-    border: 1px solid #ff5599;
+    min-height: 125px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 
 .header-box {
     height: 100%;
-    border: 1px solid pink;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-primary {
+    background: #1890FF;
+    border-radius: 2px;  
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-outline {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    color: #595959;
+}
+
+/* fixed footer and big main */
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* main styles */
+
+main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
 /* footer */
 
 .footer {
-    height: 156px;
-    border: 1px solid #ff5599;
+    min-height: 156px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-box {
     height: 100%;
-    border: 1px solid pink;
     display: flex;
     align-items: center;
     justify-content: space-between;
