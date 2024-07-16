@@ -140,7 +140,7 @@ main {
 }
 
 .banner-item {
-    background-image: url(/images/banner.png);
+    background-image: url(../images/banner.png);
     background-color: #FFF1B8;
     background-repeat: no-repeat;
     background-size: contain;
@@ -213,7 +213,7 @@ main {
 }
 
 .products-header--search-container::before {
-    content: url(/icons/search.svg); 
+    content: url(icons/search.svg); 
     position: absolute;
     margin: 8px 3px 8px 10px;
 }
