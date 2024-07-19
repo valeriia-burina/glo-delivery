@@ -1,0 +1,126 @@
+/* header */
+
+.title {
+    margin-bottom: 44px;
+}
+
+.title-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: baseline;
+}
+
+.title-name {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+}
+
+.title-rate {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 178%;
+    color: #ffc107;
+}
+
+.title-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #8c8c8c;
+}
+
+.title-type {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #8c8c8c;
+    position: relative;
+}
+
+.title-type::before {
+    content: url(../icons/dot.svg);
+    height: 6px;
+    width: 6px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -14px;
+}
+
+/* cards styles */
+
+.cards-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 calc(100%/3);
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.card-item {
+    max-width: 384px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card-img {
+    object-fit: cover;
+}
+
+.card-text-container {
+    margin: 24px 24px 32px 24px;
+}
+
+.card-name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card-descr {
+    font-weight: 400;
+    font-size: 18px;
+    color: #8c8c8c;
+    margin-bottom: 24px;
+}
+
+.card-buy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.card-tocart {
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    background: #1890ff;
+    border-radius: 2px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: normal;
+    color: #fff;
+}
+
+.card-tocart:hover {
+    background: #057ff1;
+}
+
+.card-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+}
